@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rap Den | Hip-Hop Lyrics </title>
+    <link rel="stylesheet" href="rapden.css">
+</head>
+<body>
+    <header>
+        <div class="logo.container">
+        <img src="images/rapdenlogobest.jpg" alt="Rap Den Logo">
+        <h1>RAP <span>DEN</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html"> HOME </a>
+            <a href="#trending"> TRENDING </a>
+            <a href="#news"> HIP-HOP NEWS </a>
+        </nav>
+    </header>
+
+<main>
+    <section class="hero">
+        <h2> WHERE RAP LIVES </h2>
+        <p> Discover lyrics. Explore artists.
+            Feel the bars. </p>
+
+            <form id="searchForm">
+                <input type="search" id="searchInput" placeholder="search rap songs or artists...">
+
+                <button type="submit">SEARCH</button>
+            </form>
+
+            <p id="searchMessage" aria-live="polite"></p>
+            <div id="songResults"></div>
+    </section>
+
+    <section id="trending" class="content">
+
+        <h2> Trending <span> Rap </span> </h2>
+
+        <p class="section-description">
+             Discover the hottest hip-hop tracks.
+        </p>
+
+        <div class="song-grid">
+
+            <div class="song-card">
+                <img src="images/eminem.jpg" alt="Eminem" class="song-image">
+                <div class="song-number"> 01 </div>
+                <h3> Lose Yourself </h3>
+                <p> Eminem </p>
+                <a href="lose-yourself.html"> View Lyrics </a>
+            </div>
+
+            <div class="song-card">
+                <img src="images/drake.jpg" alt="Drake" class="song-image">
+                <div class="song-number"> 02 </div>
+                <h3> God's Plan </h3>
+                <p> Drake </p>
+                <a href="god's-plan.html"> View Lyrics </a>
+            </div>
+
+            <div class="song-card">
+                <img src="images/kendrick lamar.jpg" alt="Kendrick Lamar" class="song-image">
+                <div class="song-number"> 03 </div>
+                <h3> Humble </h3>
+                <p> Kendrick Lamar </p>
+                <a href="humble.html"> View Lyrics </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="content">
+        <h2> Hip-Hop <span> News </span> </h2>
+        <p> Your destination for rap culture and music updates </p>
+
+        <div class="news-container">
+
+            <article class="news-card">
+                <img src="images/hip_hop_news.png" alt="Hip-Hop News">
+                <div class="news-content">
+                    <h3> Latest Hip-Hop News </h3>
+                    <p> Discover the latest stories, artist, 
+                        updates, and happenings in hip-hop.
+                    </p>
+                    <a href="news.html" target="_blank" rel="noopener
+                    noreferrer">Read More `n </a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="images/new_rap_music.png" alt="New rap music">
+                <div class="news-content">
+                    <h3>New Music Releases </h3>
+                    <p> Explore new rap singles, albums, collaborations, and emerging artist </p>
+                    <a href="news.html" target="_blank" rel="noopener noreferrer"> Read More `n </a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="images/trending_hip_hop.png" alt="Trending hip-hop">
+                <div class="news-content">
+                    <h3> Trending in Hip-Hop </h3>
+                    <p> Catch up on viral moments and conversations shaping rap culture </p>
+                    <a href="news.html" target="_blank" rel="noopener noreferrer"> Read More `n </a>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>    
+
+<footer>
+    <p>&copy;2026 Rap Den by SENZER. All rights reserved.</p>
+    <p> Built for the culture </p>
+</footer>
+
+<script src="rapden.js"></script>
+</body>
+</html>

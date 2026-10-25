@@ -1,0 +1,685 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    background: #0a0a0a;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 5%;
+    background: linear-gradient(135deg, #080808, #1c1c1c);
+    border-bottom: 3px solid #ff2020;
+    box-shadow: 0 5px 20px rgba(255, 32, 32, 0.2);
+    min-height: 90px;
+}
+
+header h1  {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+span  {
+    color: #ff2020;
+}
+
+nav  {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff2020;
+}
+
+.hero  {
+    text-align: center;
+    padding: 110px 20px;
+    background: radial-gradient(circle,#351010 0%,#0a0a0a 70%);
+}
+
+.hero h2  {
+    font-size: clamp(32px,6vw,55px);
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #ff202055;
+}
+
+.hero p  {
+    color: #bbbbbb;
+    margin-bottom: 25px;
+}
+
+#searchForm  {
+    display: flex;
+    max-width: 550px;
+    margin: auto;
+    gap: 10px;
+}
+
+#searchInput  {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    background: #171717;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    outline: none;
+}
+
+#searchinput:focus  {
+    border-color: #ff2020;
+    box-shadow: 0 0 10px #ff202044;
+}
+
+button  {
+    background: #ff2020;
+    color: white;
+    border: none;
+    padding: 15p 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover  {
+    background: #cc0000;
+    box-shadow: 0 0 15px #ff202077;
+}
+
+.content  {
+    padding: 45px 8%;
+    min-height: 150px;
+}
+
+.content h2  {
+    margin-bottom: 15px;
+}
+
+.content p  {
+    color: #aaaaaa;
+}
+
+footer  {
+    text-align: center;
+    padding: 25px;
+    background: #111111;
+    border-top: 1px solid #292929;
+    color: #888888;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) { header 
+    {flex-direction: column;
+        gap: 18px;}
+
+        nav {
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #searchForm  {
+            flex-direction: column;
+        }
+
+        .hero  {
+            padding: 75px 20px;
+        }
+    }
+
+.lyrics  {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #151515;
+    border-left: 4px solid #ff2020;
+    border-radius: 8px;
+    line-height: 2;
+}    
+
+.lyrics h3  {
+    color: #ff2020;
+    margin-bottom: 15px;
+}
+
+.lyrics p  {
+    white-space: pre-line;
+}
+
+.content >a {
+    color: #ff2020;
+    text-decoration: none;
+}
+
+/* rap den professional lyrics page*/
+.lyrics  {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 30px;
+    background: #151515;
+    border: 1px solid #292929;
+    border-left: 5px solid #ff2020;
+    border-radius: 10px;
+    line-height: 2;
+    box-shadow: 0 0 20px rgba(255, 32, 32, 0.08);
+}
+
+.lyrics h3  {
+    color: #ff2020;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.lyrics p  {
+    color: #eeeeee;
+    font-size: 16px;
+    line-height: 2;
+    white-space: pre-line;
+}
+
+.lyrics a  {
+    color: #ff2020;
+    text-decoration: none;
+}
+
+.lyrics a:hover  {
+    text-decoration: underline;
+}
+
+@media (max-width:600px) {
+    .lyrics  {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .lyrics p {
+        font-size: 15px;
+    }
+}
+
+/* trending songs*/
+.section-description  {
+    color: #aaaaaa;
+    margin: 12px 0 25px;
+}
+
+.song-grid  {
+    display: grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.song-card  {
+    position: relative;
+    padding: 25px;
+    background: linear-gradient(145deg, #1b1b1b, #101010);
+    border: 1px solid #303030;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.song-card:hover  {
+    transform: translateY(-6px);
+    border-color: #ff2020;
+    box-shadow: 0 8px 25px #ff202022;
+}
+
+.song-number  {
+    color: #ff2020;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.song-card h3  {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.song-card p  {
+    color: #aaaaaa;
+    margin-bottom: 25px;
+}
+
+.song-card a  {
+    display: inline-block;
+    color: #ff2020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.song-card a:hover  {
+    color: #ffffff;
+}
+
+@media (max-width:800px) {
+    .song-grid  {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width:500px) {
+    .song-grid  {
+        grid-template-columns: 1fr;
+    }
+}
+
+.song-image  {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.song-card:hover.song-image  {
+    transform: scale(1.02);
+}
+
+/* search results*/
+#songResults  {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+#songResults.song-card  {
+    min-width: 0;
+}
+
+#songResults.song-image  {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#songResults h3  {
+    margin: 12px 0;
+}
+
+#songResults p  {
+    color: #aaa;
+    margin-bottom: 18px;
+}
+
+#songResults a  {
+    color: #ff2020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width:600px) {
+    #songResults {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* mobile friendly layout*/
+* {
+    box-sizing: border-box;
+}
+
+img  {
+    max-width: 100%;
+    height: auto;
+}
+
+.song-results  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr)
+    );
+    gap: 15px;
+    width: 100%;
+}
+
+.song-card  {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.song-image  {
+    width: 100%;
+    height: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+    padding: 10px;
+}
+
+.song-results {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.song-card {
+    padding: 10px;
+}
+
+.song-card h3  {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.song-card p {
+    font-size: 13px;
+}
+
+input,
+button  {
+    max-width: 100%;
+}
+}
+
+.logo.container  {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo.container img  {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo.container h1  {
+    margin: 0;
+    font-size: 28px;
+    color: #ff0000;
+}
+
+@media (max-width:600px) {
+    .logo.container img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo.container h1 {
+        font-size: 22px;
+    }
+}
+
+/* professional header*/
+header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background: #101010;
+    border-bottom: 2px solid #ff1a1a;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.15);
+}
+
+.logo.container {
+    display: flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo.container img  {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ff1a1a;
+}
+
+.logo.container h1  {
+    color: #ff1a1a;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0;;
+}
+
+header nav  {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover  {
+    color: #ff1a1a;
+}
+
+/*mobile friendly dsign2*/
+@media(max-width:600px) {
+    header {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 4%;
+    }
+}
+
+.logo.container img  {
+    width: 42px;
+    height: 42px;
+}
+
+.logo.container h1  {
+    font-size: 21px;
+}
+
+header nav  {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+input,
+button  {
+    max-width: 100%;
+}
+
+#songResults  {
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap: 10px;
+}
+
+.song-card  {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.song-image  {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* News design*/
+.news-container  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.news-card  {
+    background: #151515;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff2020;
+}
+
+.news-card img  {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-content  {
+    padding: 18px;
+}
+
+.news-content h3  {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.news-content p  {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.news-content a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #ff2020;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-content a:hover  {
+    color: #fff;
+}
+
+@media (max-width:600px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* rap den mobile friendly*/
+img {
+    max-width: 100%;
+}
+
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header nav  {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero  {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .news-container  {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .news-card img {
+        height: 130px;
+    }
+}
+
+@media (max-width:480px) {
+    .news-container  {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card img {
+        height: 180px;
+    }
+    
+    .logo.container h1  {
+        font-size: 22px;
+    }
+}
+
+/*mobile phones responsive design*/
+@media screen and (max-width: 768px) {
+    header  {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }   
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero  {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .news-container  {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .news-card img {
+        height: 130px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+} 
+
+@media screen and (max-width:480px) {
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card img {
+        height: 180px;
+    }
+
+    header h1  {
+        font-size: 22px;
+    }
+
+    body  {
+        overflow-x: hidden;
+    }
+}
+    
