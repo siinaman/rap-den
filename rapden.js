@@ -5,37 +5,37 @@ const songs = [
     title:"lose yourself",
     artist:"Eminem",
     file:"lose-yourself.html",
-    image:"images/eminem.jpg"
+    image:"eminem.jpg"
   },
   {
     title:"God's plan",
     artist:"Drake",
     file:"god's-plan.html",
-    image:"images/drake.jpg"
+    image:"drake.jpg"
   },
   {
     title:"Humble",
     artist:"Kendrick Lamar",
     file:"humble.html",
-    image:"images/kendrick lamar.jpg"
+    image:"kendrick lamar.jpg"
   },
   {
     title:"Mockingbird",
     artist:"Eminem",
     file:"mockingbird.html",
-    image:"images/eminemmock.jpg"
+    image:"eminemmock.jpg"
   },
   {
     title:"Not Like Us",
     artist:"Kendrick Lamar",
     file:"not-like-us.html",
-    image:"images/kendrick lamar not.jpg"
+    image:"kendrick lamar not.jpg"
   },
   {
     title:"Sicko Mode",
     artist:"Travis Scott",
     file:"sicko-mode.html",
-    image:"images/travis scott.jpg"
+    image:"travis scott.jpg"
   },
   {
     title:"Greatness",
